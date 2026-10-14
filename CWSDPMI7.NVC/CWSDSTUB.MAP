@@ -1,0 +1,403 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 05032H 05033H _TEXT              CODE
+ 05040H 05470H 00431H _DATA              DATA
+ 05480H 08F5DH 03ADEH _BSS               BSS
+ 08F60H 090DFH 00180H _STACK             STACK
+ 090E0H 090E0H 00000H _BSSEND            
+
+
+Detailed map of segments
+
+ 0000:0000 04EC C=CODE   S=_TEXT          G=(none)   M=cwsdstub.ASM ACBP=68
+ 0000:04EC 01AC C=CODE   S=_TEXT          G=(none)   M=start.ASM  ACBP=A8
+ 0000:0698 0945 C=CODE   S=_TEXT          G=(none)   M=control.c  ACBP=28
+ 0000:0FDD 029B C=CODE   S=_TEXT          G=(none)   M=dalloc.c   ACBP=28
+ 0000:1278 0015 C=CODE   S=_TEXT          G=(none)   M=doutils.ASM ACBP=A8
+ 0000:1290 0409 C=CODE   S=_TEXT          G=(none)   M=dpmisim.ASM ACBP=A8
+ 0000:1699 1746 C=CODE   S=_TEXT          G=(none)   M=exphdlr.c  ACBP=28
+ 0000:2DE0 0320 C=CODE   S=_TEXT          G=(none)   M=mswitch.ASM ACBP=A8
+ 0000:3100 0C6D C=CODE   S=_TEXT          G=(none)   M=paging.c   ACBP=28
+ 0000:3D70 06BA C=CODE   S=_TEXT          G=(none)   M=tables.ASM ACBP=A8
+ 0000:442C 0064 C=CODE   S=_TEXT          G=(none)   M=uextmem.ASM ACBP=A8
+ 0000:4490 00EC C=CODE   S=_TEXT          G=(none)   M=utils.c    ACBP=28
+ 0000:457C 0962 C=CODE   S=_TEXT          G=(none)   M=valloc.c   ACBP=28
+ 0000:4EE0 008A C=CODE   S=_TEXT          G=(none)   M=xms.ASM    ACBP=A8
+ 0000:4F6C 00C7 C=CODE   S=_TEXT          G=(none)   M=vcpi.ASM   ACBP=A8
+ 0504:0000 0092 C=DATA   S=_DATA          G=DGROUP  M=cwsdstub.ASM ACBP=68
+ 0504:0092 000C C=DATA   S=_DATA          G=DGROUP  M=start.ASM  ACBP=48
+ 0504:009E 0231 C=DATA   S=_DATA          G=DGROUP  M=control.c  ACBP=48
+ 0504:02D0 0046 C=DATA   S=_DATA          G=DGROUP  M=dalloc.c   ACBP=48
+ 0504:0316 0000 C=DATA   S=_DATA          G=DGROUP  M=doutils.ASM ACBP=48
+ 0504:0316 0004 C=DATA   S=_DATA          G=DGROUP  M=dpmisim.ASM ACBP=48
+ 0504:031A 0092 C=DATA   S=_DATA          G=DGROUP  M=exphdlr.c  ACBP=48
+ 0504:03AC 0000 C=DATA   S=_DATA          G=DGROUP  M=mswitch.ASM ACBP=48
+ 0504:03AC 0010 C=DATA   S=_DATA          G=DGROUP  M=paging.c   ACBP=48
+ 0504:03BC 0008 C=DATA   S=_DATA          G=DGROUP  M=tables.ASM ACBP=48
+ 0504:03C4 0000 C=DATA   S=_DATA          G=DGROUP  M=uextmem.ASM ACBP=48
+ 0504:03C4 0002 C=DATA   S=_DATA          G=DGROUP  M=utils.c    ACBP=48
+ 0504:03C6 0060 C=DATA   S=_DATA          G=DGROUP  M=valloc.c   ACBP=48
+ 0504:0426 0000 C=DATA   S=_DATA          G=DGROUP  M=xms.ASM    ACBP=48
+ 0504:0426 000B C=DATA   S=_DATA          G=DGROUP  M=vcpi.ASM   ACBP=48
+ 0504:0440 0163 C=BSS    S=_BSS           G=DGROUP  M=cwsdstub.ASM ACBP=68
+ 0504:05A4 0000 C=BSS    S=_BSS           G=DGROUP  M=start.ASM  ACBP=48
+ 0504:05A4 0C8E C=BSS    S=_BSS           G=DGROUP  M=control.c  ACBP=48
+ 0504:1232 0014 C=BSS    S=_BSS           G=DGROUP  M=dalloc.c   ACBP=48
+ 0504:1246 0000 C=BSS    S=_BSS           G=DGROUP  M=doutils.ASM ACBP=48
+ 0504:1246 0033 C=BSS    S=_BSS           G=DGROUP  M=dpmisim.ASM ACBP=48
+ 0504:127A 1293 C=BSS    S=_BSS           G=DGROUP  M=exphdlr.c  ACBP=48
+ 0504:250E 03ED C=BSS    S=_BSS           G=DGROUP  M=mswitch.ASM ACBP=48
+ 0504:28FC 1435 C=BSS    S=_BSS           G=DGROUP  M=paging.c   ACBP=48
+ 0504:3D32 00F4 C=BSS    S=_BSS           G=DGROUP  M=tables.ASM ACBP=48
+ 0504:3E26 0000 C=BSS    S=_BSS           G=DGROUP  M=uextmem.ASM ACBP=48
+ 0504:3E26 0000 C=BSS    S=_BSS           G=DGROUP  M=utils.c    ACBP=48
+ 0504:3E26 00F3 C=BSS    S=_BSS           G=DGROUP  M=valloc.c   ACBP=48
+ 0504:3F1A 0004 C=BSS    S=_BSS           G=DGROUP  M=xms.ASM    ACBP=48
+ 0504:3F1E 0000 C=BSS    S=_BSS           G=DGROUP  M=vcpi.ASM   ACBP=48
+ 08F6:0000 0100 C=STACK  S=_STACK         G=(none)  M=cwsdstub.ASM ACBP=74
+ 08F6:0100 0080 C=STACK  S=_STACK         G=(none)  M=start.ASM  ACBP=75
+ 090E:0000 0000 C=       S=_BSSEND        G=(none) M=start.ASM  ACBP=60
+
+  Address         Publics by Name
+
+ 0000:004F2       lsetup
+ 0000:00677       N_LXLSH@
+ 0000:00674 idle  N_LXMUL@
+ 0000:00680 idle  N_LXRSH@
+ 0000:0068C       N_LXURSH@
+ 0000:0065E       N_SCOPY@
+ 0504:02926       _abs_client
+ 0000:01B12       _alloc_ldt
+ 0504:02620       _a_tss
+ 0000:03345       _cant_ask_for
+ 0000:00749       _cleanup
+ 0000:0307C       _cpumode
+ 0000:03083       _cputype
+ 0000:01516       _cpu_family
+ 0504:000A6       _CWSpar
+ 0504:0252E       _c_tss
+ 0000:010DF       _dalloc
+ 0000:01038       _dalloc_file
+ 0000:01043       _dalloc_init
+ 0000:01170       _dalloc_max_size
+ 0000:010A7       _dalloc_uninit
+ 0000:0114B       _dfree
+ 0504:01232       _dmap
+ 0000:0098B       _do_faulting_finish_message
+ 0000:015F9       _do_raw_switch
+ 0000:01627       _do_raw_switch_ret
+ 0000:0151A       _dpmiint2f
+ 0000:01296       _dpmisim
+ 0504:01246       _dpmisim_regs
+ 0504:0127A       _dpmisim_rmcb
+ 0000:01347       _dpmisim_rmcb0
+ 0000:0134B       _dpmisim_rmcb1
+ 0504:00316       _DPMIsp
+ 0000:00C76       _DPMIstartup
+ 0504:0250E       _dr
+ 0000:01237       _dread
+ 0000:011DF       _dwrite
+ 0000:04F9C       _ems_free
+ 0000:04F76       _ems_init
+ 0000:0087B       _errmsg
+ 0000:01A54       _exception_handler
+ 0000:0054C       _exit
+ 0504:028F6       _features
+ 0504:003AC       _firstarea
+ 0000:0058E       _free
+ 0000:03A52       _free_memory
+ 0000:03B61       _free_memory_area
+ 0504:02804       _f_tss
+ 0504:005A4       _gdt
+ 0504:02904       _gdt_phys
+ 0000:04397       _generic_handler
+ 0000:00607       _getvect
+ 0000:04FBE       _get_interface
+ 0000:00698       _get_pid
+ 0000:02DEA       _go32
+ 0000:02EF7       _go_real_mode
+ 0000:04490       _go_til_stop
+ 0504:0032F       _hard_master_hi
+ 0504:0032E       _hard_master_lo
+ 0504:00331       _hard_slave_hi
+ 0504:00330       _hard_slave_lo
+ 0000:0436F       _i30x_jump
+ 0000:04375       _i30x_stack
+ 0000:0436C       _i30x_sti
+ 0504:00A2C       _idt
+ 0504:0290A       _idt_phys
+ 0000:01745       _init_controllers
+ 0000:01518       _init_size
+ 0000:01665       _int23
+ 0000:01663       _int24
+ 0000:04188       _interrupt_common
+ 0504:01278       _in_rmcb
+ 0000:0423C       _irq0
+ 0000:04240 idle  _irq1
+ 0000:03D70       _ivec0
+ 0000:03D74       _ivec1
+ 0000:04306       _ivec31
+ 0000:04340       _ivec31x
+ 0000:0437B       _ivec7
+ 0504:03D32       _i_tss
+ 0504:0062C       _ldt
+ 0504:0032C       _locked_count
+ 0504:01508       _locked_stack
+ 0000:0397E       _lock_memory
+ 0000:00581       _lseek
+ 0000:01677       _main
+ 0000:00A5E       _main1
+ 0000:005A5       _malloc
+ 0000:0451E       _memget
+ 0000:044C0       _memput
+ 0000:00627       _memset
+ 0000:0063C       _memsetf
+ 0000:00644       _movedata
+ 0000:03CEB       _move_pt
+ 0504:000A3       _mtype
+ 0000:0150E       _oldint2f
+ 0504:02712       _o_tss
+ 0000:03BB6       _page_attributes
+ 0000:0359D       _page_in
+ 0000:033A5 idle  _page_is_valid
+ 0000:03728       _page_out
+ 0000:03692       _page_out_640
+ 0000:031E2       _paging_setup
+ 0000:03880       _physical_map
+ 0000:02E59       _protect_entry
+ 0000:03100       _ptr2linear
+ 0000:0437F       _real_i8
+ 0504:02900       _reserved
+ 0000:02FD5       _reset_a20
+ 0000:015BC       _ring0_iret
+ 0504:014C0       _saved_interrupt_vector
+ 0000:01662       _savestate_prot
+ 0000:01662       _savestate_real
+ 0000:00616       _setvect
+ 0000:02FFC       _set_a20
+ 0000:006A3       _set_pid
+ 0504:0122C       _tss_ptr
+ 0000:0442C       _uextmem
+ 0000:01822       _uninit_controllers
+ 0000:00551       _unlink
+ 0000:015B3       _user_exception_return
+ 0504:01454       _user_interrupt_handler
+ 0000:015B7       _user_interrupt_return
+ 0504:000A5       _use_xms
+ 0504:003C4       _utils_tss
+ 0000:04C03       _valloc
+ 0000:04D1B       _valloc4m
+ 0000:04B84       _valloc_640
+ 0000:0476F       _valloc_init
+ 0000:04EC6       _valloc_max_size
+ 0000:04B6A       _valloc_uninit
+ 0000:04ED2       _valloc_used
+ 0000:04FEA       _vcpi_alloc
+ 0000:04FE3       _vcpi_capacity
+ 0504:0292A       _vcpi_entry
+ 0000:05001       _vcpi_free
+ 0000:05013       _vcpi_get_pic
+ 0000:0501B       _vcpi_get_secpic
+ 0504:000A4       _vcpi_installed
+ 0000:04FDC       _vcpi_maxpage
+ 0000:04FAE       _vcpi_present
+ 0504:003B2       _vcpi_pt
+ 0000:05023       _vcpi_set_pics
+ 0000:04E5C       _vfree
+ 0000:04E01       _vfree4m
+ 0504:028FA       _was_exception
+ 0000:04F48       _xms_emb_allocate
+ 0000:04F20       _xms_emb_free
+ 0000:04EE0       _xms_installed
+ 0000:04F1C       _xms_local_disable_a20
+ 0000:04F18       _xms_local_enable_a20
+ 0000:04F32       _xms_lock_emb
+ 0000:04EFD       _xms_query_extended_memory
+ 0000:04F2E       _xms_unlock_emb
+ 0504:00096 idle  __brklvl
+ 0000:00586       __close
+ 0000:00555       __creat
+ 0000:01278       __do_memmov32
+ 0000:0054C       __exit
+ 0504:00094       __osmajor
+ 0504:00095 idle  __osminor
+ 0504:00092       __psp
+ 0000:0057D       __read
+ 0000:0058D idle  __restorezero
+ 0504:0009E       __stklen
+ 0000:00567       __write
+ 0504:0009A idle  ___brklvl
+
+  Address         Publics by Value
+
+ 0000:05023       _vcpi_set_pics
+ 0000:0501B       _vcpi_get_secpic
+ 0000:05013       _vcpi_get_pic
+ 0000:05001       _vcpi_free
+ 0000:04FEA       _vcpi_alloc
+ 0000:04FE3       _vcpi_capacity
+ 0000:04FDC       _vcpi_maxpage
+ 0000:04FBE       _get_interface
+ 0000:04FAE       _vcpi_present
+ 0000:04F9C       _ems_free
+ 0000:04F76       _ems_init
+ 0000:04F48       _xms_emb_allocate
+ 0000:04F32       _xms_lock_emb
+ 0000:04F2E       _xms_unlock_emb
+ 0000:04F20       _xms_emb_free
+ 0000:04F1C       _xms_local_disable_a20
+ 0000:04F18       _xms_local_enable_a20
+ 0000:04EFD       _xms_query_extended_memory
+ 0000:04EE0       _xms_installed
+ 0000:04ED2       _valloc_used
+ 0000:04EC6       _valloc_max_size
+ 0000:04E5C       _vfree
+ 0000:04E01       _vfree4m
+ 0000:04D1B       _valloc4m
+ 0000:04C03       _valloc
+ 0000:04B84       _valloc_640
+ 0000:04B6A       _valloc_uninit
+ 0000:0476F       _valloc_init
+ 0000:0451E       _memget
+ 0000:044C0       _memput
+ 0000:04490       _go_til_stop
+ 0000:0442C       _uextmem
+ 0000:04397       _generic_handler
+ 0000:0437F       _real_i8
+ 0000:0437B       _ivec7
+ 0000:04375       _i30x_stack
+ 0000:0436F       _i30x_jump
+ 0000:0436C       _i30x_sti
+ 0000:04340       _ivec31x
+ 0000:04306       _ivec31
+ 0000:04240 idle  _irq1
+ 0000:0423C       _irq0
+ 0000:04188       _interrupt_common
+ 0000:03D74       _ivec1
+ 0000:03D70       _ivec0
+ 0000:03CEB       _move_pt
+ 0000:03BB6       _page_attributes
+ 0000:03B61       _free_memory_area
+ 0000:03A52       _free_memory
+ 0000:0397E       _lock_memory
+ 0000:03880       _physical_map
+ 0000:03728       _page_out
+ 0000:03692       _page_out_640
+ 0000:0359D       _page_in
+ 0000:033A5 idle  _page_is_valid
+ 0000:03345       _cant_ask_for
+ 0000:031E2       _paging_setup
+ 0000:03100       _ptr2linear
+ 0000:03083       _cputype
+ 0000:0307C       _cpumode
+ 0000:02FFC       _set_a20
+ 0000:02FD5       _reset_a20
+ 0000:02EF7       _go_real_mode
+ 0000:02E59       _protect_entry
+ 0000:02DEA       _go32
+ 0000:01B12       _alloc_ldt
+ 0000:01A54       _exception_handler
+ 0000:01822       _uninit_controllers
+ 0000:01745       _init_controllers
+ 0000:01677       _main
+ 0000:01665       _int23
+ 0000:01663       _int24
+ 0000:01662       _savestate_real
+ 0000:01662       _savestate_prot
+ 0000:01627       _do_raw_switch_ret
+ 0000:015F9       _do_raw_switch
+ 0000:015BC       _ring0_iret
+ 0000:015B7       _user_interrupt_return
+ 0000:015B3       _user_exception_return
+ 0000:0151A       _dpmiint2f
+ 0000:01518       _init_size
+ 0000:01516       _cpu_family
+ 0000:0150E       _oldint2f
+ 0000:0134B       _dpmisim_rmcb1
+ 0000:01347       _dpmisim_rmcb0
+ 0000:01296       _dpmisim
+ 0000:01278       __do_memmov32
+ 0000:01237       _dread
+ 0000:011DF       _dwrite
+ 0000:01170       _dalloc_max_size
+ 0000:0114B       _dfree
+ 0000:010DF       _dalloc
+ 0000:010A7       _dalloc_uninit
+ 0000:01043       _dalloc_init
+ 0000:01038       _dalloc_file
+ 0000:00C76       _DPMIstartup
+ 0000:00A5E       _main1
+ 0000:0098B       _do_faulting_finish_message
+ 0000:0087B       _errmsg
+ 0000:00749       _cleanup
+ 0000:006A3       _set_pid
+ 0000:00698       _get_pid
+ 0000:0068C       N_LXURSH@
+ 0000:00680 idle  N_LXRSH@
+ 0000:00677       N_LXLSH@
+ 0000:00674 idle  N_LXMUL@
+ 0000:0065E       N_SCOPY@
+ 0000:00644       _movedata
+ 0000:0063C       _memsetf
+ 0000:00627       _memset
+ 0000:00616       _setvect
+ 0000:00607       _getvect
+ 0000:005A5       _malloc
+ 0000:0058E       _free
+ 0000:0058D idle  __restorezero
+ 0000:00586       __close
+ 0000:00581       _lseek
+ 0000:0057D       __read
+ 0000:00567       __write
+ 0000:00555       __creat
+ 0000:00551       _unlink
+ 0000:0054C       _exit
+ 0000:0054C       __exit
+ 0000:004F2       lsetup
+ 0504:03D32       _i_tss
+ 0504:0292A       _vcpi_entry
+ 0504:02926       _abs_client
+ 0504:0290A       _idt_phys
+ 0504:02904       _gdt_phys
+ 0504:02900       _reserved
+ 0504:028FA       _was_exception
+ 0504:028F6       _features
+ 0504:02804       _f_tss
+ 0504:02712       _o_tss
+ 0504:02620       _a_tss
+ 0504:0252E       _c_tss
+ 0504:0250E       _dr
+ 0504:01508       _locked_stack
+ 0504:014C0       _saved_interrupt_vector
+ 0504:01454       _user_interrupt_handler
+ 0504:0127A       _dpmisim_rmcb
+ 0504:01278       _in_rmcb
+ 0504:01246       _dpmisim_regs
+ 0504:01232       _dmap
+ 0504:0122C       _tss_ptr
+ 0504:00A2C       _idt
+ 0504:0062C       _ldt
+ 0504:005A4       _gdt
+ 0504:003C4       _utils_tss
+ 0504:003B2       _vcpi_pt
+ 0504:003AC       _firstarea
+ 0504:00331       _hard_slave_hi
+ 0504:00330       _hard_slave_lo
+ 0504:0032F       _hard_master_hi
+ 0504:0032E       _hard_master_lo
+ 0504:0032C       _locked_count
+ 0504:00316       _DPMIsp
+ 0504:000A6       _CWSpar
+ 0504:000A5       _use_xms
+ 0504:000A4       _vcpi_installed
+ 0504:000A3       _mtype
+ 0504:0009E       __stklen
+ 0504:0009A idle  ___brklvl
+ 0504:00096 idle  __brklvl
+ 0504:00095 idle  __osminor
+ 0504:00094       __osmajor
+ 0504:00092       __psp
+
+Program entry point at 0000:0054
+

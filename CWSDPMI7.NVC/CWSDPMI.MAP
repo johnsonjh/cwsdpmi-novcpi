@@ -1,0 +1,404 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 04CA6H 04CA7H _TEXT              CODE
+ 04CA8H 050C2H 0041BH _DATA              DATA
+ 050C4H 08A3DH 0397AH _BSS               BSS
+ 08A40H 08A40H 00000H _BSSEND            
+ 08A40H 08ABFH 00080H _STACK             STACK
+
+
+Detailed map of segments
+
+ 0000:0000 01AC C=CODE   S=_TEXT          G=(none)   M=start.ASM  ACBP=A8
+ 0000:01AC 0A64 C=CODE   S=_TEXT          G=(none)   M=control.c  ACBP=28
+ 0000:0C10 029B C=CODE   S=_TEXT          G=(none)   M=dalloc.c   ACBP=28
+ 0000:0EAC 0015 C=CODE   S=_TEXT          G=(none)   M=doutils.ASM ACBP=A8
+ 0000:0EC4 0409 C=CODE   S=_TEXT          G=(none)   M=dpmisim.ASM ACBP=A8
+ 0000:12CD 1746 C=CODE   S=_TEXT          G=(none)   M=exphdlr.c  ACBP=28
+ 0000:2A14 0320 C=CODE   S=_TEXT          G=(none)   M=mswitch.ASM ACBP=A8
+ 0000:2D34 0C6D C=CODE   S=_TEXT          G=(none)   M=paging.c   ACBP=28
+ 0000:39A4 06BA C=CODE   S=_TEXT          G=(none)   M=tables.ASM ACBP=A8
+ 0000:4060 0064 C=CODE   S=_TEXT          G=(none)   M=uextmem.ASM ACBP=A8
+ 0000:40C4 00EC C=CODE   S=_TEXT          G=(none)   M=utils.c    ACBP=28
+ 0000:41B0 003F C=CODE   S=_TEXT          G=(none)   M=unload.ASM ACBP=A8
+ 0000:41EF 0962 C=CODE   S=_TEXT          G=(none)   M=valloc.c   ACBP=28
+ 0000:4B54 008A C=CODE   S=_TEXT          G=(none)   M=xms.ASM    ACBP=A8
+ 0000:4BE0 00C7 C=CODE   S=_TEXT          G=(none)   M=vcpi.ASM   ACBP=A8
+ 04CA:0008 000C C=DATA   S=_DATA          G=DGROUP  M=start.ASM  ACBP=48
+ 04CA:0014 0294 C=DATA   S=_DATA          G=DGROUP  M=control.c  ACBP=48
+ 04CA:02A8 0046 C=DATA   S=_DATA          G=DGROUP  M=dalloc.c   ACBP=48
+ 04CA:02EE 0000 C=DATA   S=_DATA          G=DGROUP  M=doutils.ASM ACBP=48
+ 04CA:02EE 0004 C=DATA   S=_DATA          G=DGROUP  M=dpmisim.ASM ACBP=48
+ 04CA:02F2 0092 C=DATA   S=_DATA          G=DGROUP  M=exphdlr.c  ACBP=48
+ 04CA:0384 0000 C=DATA   S=_DATA          G=DGROUP  M=mswitch.ASM ACBP=48
+ 04CA:0384 0010 C=DATA   S=_DATA          G=DGROUP  M=paging.c   ACBP=48
+ 04CA:0394 0008 C=DATA   S=_DATA          G=DGROUP  M=tables.ASM ACBP=48
+ 04CA:039C 0000 C=DATA   S=_DATA          G=DGROUP  M=uextmem.ASM ACBP=48
+ 04CA:039C 0002 C=DATA   S=_DATA          G=DGROUP  M=utils.c    ACBP=48
+ 04CA:039E 001A C=DATA   S=_DATA          G=DGROUP  M=unload.ASM ACBP=48
+ 04CA:03B8 0060 C=DATA   S=_DATA          G=DGROUP  M=valloc.c   ACBP=48
+ 04CA:0418 0000 C=DATA   S=_DATA          G=DGROUP  M=xms.ASM    ACBP=48
+ 04CA:0418 000B C=DATA   S=_DATA          G=DGROUP  M=vcpi.ASM   ACBP=48
+ 04CA:0424 0000 C=BSS    S=_BSS           G=DGROUP  M=start.ASM  ACBP=48
+ 04CA:0424 0C8E C=BSS    S=_BSS           G=DGROUP  M=control.c  ACBP=48
+ 04CA:10B2 0014 C=BSS    S=_BSS           G=DGROUP  M=dalloc.c   ACBP=48
+ 04CA:10C6 0000 C=BSS    S=_BSS           G=DGROUP  M=doutils.ASM ACBP=48
+ 04CA:10C6 0033 C=BSS    S=_BSS           G=DGROUP  M=dpmisim.ASM ACBP=48
+ 04CA:10FA 1293 C=BSS    S=_BSS           G=DGROUP  M=exphdlr.c  ACBP=48
+ 04CA:238E 03ED C=BSS    S=_BSS           G=DGROUP  M=mswitch.ASM ACBP=48
+ 04CA:277C 1435 C=BSS    S=_BSS           G=DGROUP  M=paging.c   ACBP=48
+ 04CA:3BB2 00F4 C=BSS    S=_BSS           G=DGROUP  M=tables.ASM ACBP=48
+ 04CA:3CA6 0000 C=BSS    S=_BSS           G=DGROUP  M=uextmem.ASM ACBP=48
+ 04CA:3CA6 0000 C=BSS    S=_BSS           G=DGROUP  M=utils.c    ACBP=48
+ 04CA:3CA6 0000 C=BSS    S=_BSS           G=DGROUP  M=unload.ASM ACBP=48
+ 04CA:3CA6 00F3 C=BSS    S=_BSS           G=DGROUP  M=valloc.c   ACBP=48
+ 04CA:3D9A 0004 C=BSS    S=_BSS           G=DGROUP  M=xms.ASM    ACBP=48
+ 04CA:3D9E 0000 C=BSS    S=_BSS           G=DGROUP  M=vcpi.ASM   ACBP=48
+ 08A4:0000 0000 C=       S=_BSSEND        G=(none) M=start.ASM  ACBP=60
+ 08A4:0000 0080 C=STACK  S=_STACK         G=(none)  M=start.ASM  ACBP=75
+
+  Address         Publics by Name
+
+ 0000:00006 idle  lsetup
+ 0000:0018B       N_LXLSH@
+ 0000:00188 idle  N_LXMUL@
+ 0000:00194 idle  N_LXRSH@
+ 0000:001A0       N_LXURSH@
+ 0000:00172       N_SCOPY@
+ 04CA:027A6       _abs_client
+ 0000:01746       _alloc_ldt
+ 04CA:024A0       _a_tss
+ 0000:02F79       _cant_ask_for
+ 0000:0025D       _cleanup
+ 0000:02CB0       _cpumode
+ 0000:02CB7       _cputype
+ 0000:0114A       _cpu_family
+ 04CA:0001C       _CWSpar
+ 04CA:023AE       _c_tss
+ 0000:00D12       _dalloc
+ 0000:00C6B       _dalloc_file
+ 0000:00C76       _dalloc_init
+ 0000:00DA3       _dalloc_max_size
+ 0000:00CDA       _dalloc_uninit
+ 0000:00D7E       _dfree
+ 04CA:010B2       _dmap
+ 0000:0049F       _do_faulting_finish_message
+ 0000:0122D       _do_raw_switch
+ 0000:0125B       _do_raw_switch_ret
+ 0000:0114E       _dpmiint2f
+ 0000:00ECA       _dpmisim
+ 04CA:010C6       _dpmisim_regs
+ 04CA:010FA       _dpmisim_rmcb
+ 0000:00F7B       _dpmisim_rmcb0
+ 0000:00F7F       _dpmisim_rmcb1
+ 04CA:002EE       _DPMIsp
+ 0000:008A9       _DPMIstartup
+ 04CA:0238E       _dr
+ 0000:00E6A       _dread
+ 0000:00E12       _dwrite
+ 0000:04C10       _ems_free
+ 0000:04BEA       _ems_init
+ 0000:0038F       _errmsg
+ 0000:01688       _exception_handler
+ 0000:00060       _exit
+ 04CA:02776       _features
+ 04CA:00384       _firstarea
+ 0000:000A2       _free
+ 0000:03686       _free_memory
+ 0000:03795       _free_memory_area
+ 04CA:02684       _f_tss
+ 04CA:00424       _gdt
+ 04CA:02784       _gdt_phys
+ 0000:03FCB       _generic_handler
+ 0000:0011B       _getvect
+ 0000:04C32       _get_interface
+ 0000:001AC       _get_pid
+ 0000:02A1E       _go32
+ 0000:02B2B       _go_real_mode
+ 0000:040C4       _go_til_stop
+ 04CA:00307       _hard_master_hi
+ 04CA:00306       _hard_master_lo
+ 04CA:00309       _hard_slave_hi
+ 04CA:00308       _hard_slave_lo
+ 0000:03FA3       _i30x_jump
+ 0000:03FA9       _i30x_stack
+ 0000:03FA0       _i30x_sti
+ 04CA:008AC       _idt
+ 04CA:0278A       _idt_phys
+ 0000:01379       _init_controllers
+ 0000:0114C       _init_size
+ 0000:01299       _int23
+ 0000:01297       _int24
+ 0000:03DBC       _interrupt_common
+ 04CA:010F8       _in_rmcb
+ 0000:03E70       _irq0
+ 0000:03E74 idle  _irq1
+ 0000:039A4       _ivec0
+ 0000:039A8       _ivec1
+ 0000:03F3A       _ivec31
+ 0000:03F74       _ivec31x
+ 0000:03FAF       _ivec7
+ 04CA:03BB2       _i_tss
+ 04CA:004AC       _ldt
+ 04CA:00304       _locked_count
+ 04CA:01388       _locked_stack
+ 0000:035B2       _lock_memory
+ 0000:00095       _lseek
+ 0000:012AB       _main
+ 0000:00572       _main1
+ 0000:000B9       _malloc
+ 0000:04152       _memget
+ 0000:040F4       _memput
+ 0000:0013B       _memset
+ 0000:00150       _memsetf
+ 0000:00158       _movedata
+ 0000:0391F       _move_pt
+ 04CA:00019       _mtype
+ 0000:01142       _oldint2f
+ 04CA:02592       _o_tss
+ 0000:037EA       _page_attributes
+ 0000:031D1       _page_in
+ 0000:02FD9 idle  _page_is_valid
+ 0000:0335C       _page_out
+ 0000:032C6       _page_out_640
+ 0000:02E16       _paging_setup
+ 0000:034B4       _physical_map
+ 0000:02A8D       _protect_entry
+ 0000:02D34       _ptr2linear
+ 0000:03FB3       _real_i8
+ 04CA:02780       _reserved
+ 0000:02C09       _reset_a20
+ 0000:011F0       _ring0_iret
+ 04CA:01340       _saved_interrupt_vector
+ 0000:01296       _savestate_prot
+ 0000:01296       _savestate_real
+ 0000:0012A       _setvect
+ 0000:02C30       _set_a20
+ 0000:001B7       _set_pid
+ 04CA:010AC       _tss_ptr
+ 0000:04060       _uextmem
+ 0000:01456       _uninit_controllers
+ 0000:00065       _unlink
+ 0000:041B0       _unload_tsr
+ 0000:011E7       _user_exception_return
+ 04CA:012D4       _user_interrupt_handler
+ 0000:011EB       _user_interrupt_return
+ 04CA:0001B       _use_xms
+ 04CA:0039C       _utils_tss
+ 0000:04876       _valloc
+ 0000:0498E       _valloc4m
+ 0000:047F7       _valloc_640
+ 0000:043E2       _valloc_init
+ 0000:04B39       _valloc_max_size
+ 0000:047DD       _valloc_uninit
+ 0000:04B45       _valloc_used
+ 0000:04C5E       _vcpi_alloc
+ 0000:04C57       _vcpi_capacity
+ 04CA:027AA       _vcpi_entry
+ 0000:04C75       _vcpi_free
+ 0000:04C87       _vcpi_get_pic
+ 0000:04C8F       _vcpi_get_secpic
+ 04CA:0001A       _vcpi_installed
+ 0000:04C50       _vcpi_maxpage
+ 0000:04C22       _vcpi_present
+ 04CA:0038A       _vcpi_pt
+ 0000:04C97       _vcpi_set_pics
+ 0000:04ACF       _vfree
+ 0000:04A74       _vfree4m
+ 04CA:0277A       _was_exception
+ 0000:04BBC       _xms_emb_allocate
+ 0000:04B94       _xms_emb_free
+ 0000:04B54       _xms_installed
+ 0000:04B90       _xms_local_disable_a20
+ 0000:04B8C       _xms_local_enable_a20
+ 0000:04BA6       _xms_lock_emb
+ 0000:04B71       _xms_query_extended_memory
+ 0000:04BA2       _xms_unlock_emb
+ 04CA:0000C       __brklvl
+ 0000:0009A       __close
+ 0000:00069       __creat
+ 0000:00EAC       __do_memmov32
+ 0000:00060       __exit
+ 04CA:0000A       __osmajor
+ 04CA:0000B idle  __osminor
+ 04CA:00008       __psp
+ 0000:00091       __read
+ 0000:000A1       __restorezero
+ 04CA:00014       __stklen
+ 0000:0007B       __write
+ 04CA:00010 idle  ___brklvl
+
+  Address         Publics by Value
+
+ 0000:04C97       _vcpi_set_pics
+ 0000:04C8F       _vcpi_get_secpic
+ 0000:04C87       _vcpi_get_pic
+ 0000:04C75       _vcpi_free
+ 0000:04C5E       _vcpi_alloc
+ 0000:04C57       _vcpi_capacity
+ 0000:04C50       _vcpi_maxpage
+ 0000:04C32       _get_interface
+ 0000:04C22       _vcpi_present
+ 0000:04C10       _ems_free
+ 0000:04BEA       _ems_init
+ 0000:04BBC       _xms_emb_allocate
+ 0000:04BA6       _xms_lock_emb
+ 0000:04BA2       _xms_unlock_emb
+ 0000:04B94       _xms_emb_free
+ 0000:04B90       _xms_local_disable_a20
+ 0000:04B8C       _xms_local_enable_a20
+ 0000:04B71       _xms_query_extended_memory
+ 0000:04B54       _xms_installed
+ 0000:04B45       _valloc_used
+ 0000:04B39       _valloc_max_size
+ 0000:04ACF       _vfree
+ 0000:04A74       _vfree4m
+ 0000:0498E       _valloc4m
+ 0000:04876       _valloc
+ 0000:047F7       _valloc_640
+ 0000:047DD       _valloc_uninit
+ 0000:043E2       _valloc_init
+ 0000:041B0       _unload_tsr
+ 0000:04152       _memget
+ 0000:040F4       _memput
+ 0000:040C4       _go_til_stop
+ 0000:04060       _uextmem
+ 0000:03FCB       _generic_handler
+ 0000:03FB3       _real_i8
+ 0000:03FAF       _ivec7
+ 0000:03FA9       _i30x_stack
+ 0000:03FA3       _i30x_jump
+ 0000:03FA0       _i30x_sti
+ 0000:03F74       _ivec31x
+ 0000:03F3A       _ivec31
+ 0000:03E74 idle  _irq1
+ 0000:03E70       _irq0
+ 0000:03DBC       _interrupt_common
+ 0000:039A8       _ivec1
+ 0000:039A4       _ivec0
+ 0000:0391F       _move_pt
+ 0000:037EA       _page_attributes
+ 0000:03795       _free_memory_area
+ 0000:03686       _free_memory
+ 0000:035B2       _lock_memory
+ 0000:034B4       _physical_map
+ 0000:0335C       _page_out
+ 0000:032C6       _page_out_640
+ 0000:031D1       _page_in
+ 0000:02FD9 idle  _page_is_valid
+ 0000:02F79       _cant_ask_for
+ 0000:02E16       _paging_setup
+ 0000:02D34       _ptr2linear
+ 0000:02CB7       _cputype
+ 0000:02CB0       _cpumode
+ 0000:02C30       _set_a20
+ 0000:02C09       _reset_a20
+ 0000:02B2B       _go_real_mode
+ 0000:02A8D       _protect_entry
+ 0000:02A1E       _go32
+ 0000:01746       _alloc_ldt
+ 0000:01688       _exception_handler
+ 0000:01456       _uninit_controllers
+ 0000:01379       _init_controllers
+ 0000:012AB       _main
+ 0000:01299       _int23
+ 0000:01297       _int24
+ 0000:01296       _savestate_prot
+ 0000:01296       _savestate_real
+ 0000:0125B       _do_raw_switch_ret
+ 0000:0122D       _do_raw_switch
+ 0000:011F0       _ring0_iret
+ 0000:011EB       _user_interrupt_return
+ 0000:011E7       _user_exception_return
+ 0000:0114E       _dpmiint2f
+ 0000:0114C       _init_size
+ 0000:0114A       _cpu_family
+ 0000:01142       _oldint2f
+ 0000:00F7F       _dpmisim_rmcb1
+ 0000:00F7B       _dpmisim_rmcb0
+ 0000:00ECA       _dpmisim
+ 0000:00EAC       __do_memmov32
+ 0000:00E6A       _dread
+ 0000:00E12       _dwrite
+ 0000:00DA3       _dalloc_max_size
+ 0000:00D7E       _dfree
+ 0000:00D12       _dalloc
+ 0000:00CDA       _dalloc_uninit
+ 0000:00C76       _dalloc_init
+ 0000:00C6B       _dalloc_file
+ 0000:008A9       _DPMIstartup
+ 0000:00572       _main1
+ 0000:0049F       _do_faulting_finish_message
+ 0000:0038F       _errmsg
+ 0000:0025D       _cleanup
+ 0000:001B7       _set_pid
+ 0000:001AC       _get_pid
+ 0000:001A0       N_LXURSH@
+ 0000:00194 idle  N_LXRSH@
+ 0000:0018B       N_LXLSH@
+ 0000:00188 idle  N_LXMUL@
+ 0000:00172       N_SCOPY@
+ 0000:00158       _movedata
+ 0000:00150       _memsetf
+ 0000:0013B       _memset
+ 0000:0012A       _setvect
+ 0000:0011B       _getvect
+ 0000:000B9       _malloc
+ 0000:000A2       _free
+ 0000:000A1       __restorezero
+ 0000:0009A       __close
+ 0000:00095       _lseek
+ 0000:00091       __read
+ 0000:0007B       __write
+ 0000:00069       __creat
+ 0000:00065       _unlink
+ 0000:00060       _exit
+ 0000:00060       __exit
+ 0000:00006 idle  lsetup
+ 04CA:03BB2       _i_tss
+ 04CA:027AA       _vcpi_entry
+ 04CA:027A6       _abs_client
+ 04CA:0278A       _idt_phys
+ 04CA:02784       _gdt_phys
+ 04CA:02780       _reserved
+ 04CA:0277A       _was_exception
+ 04CA:02776       _features
+ 04CA:02684       _f_tss
+ 04CA:02592       _o_tss
+ 04CA:024A0       _a_tss
+ 04CA:023AE       _c_tss
+ 04CA:0238E       _dr
+ 04CA:01388       _locked_stack
+ 04CA:01340       _saved_interrupt_vector
+ 04CA:012D4       _user_interrupt_handler
+ 04CA:010FA       _dpmisim_rmcb
+ 04CA:010F8       _in_rmcb
+ 04CA:010C6       _dpmisim_regs
+ 04CA:010B2       _dmap
+ 04CA:010AC       _tss_ptr
+ 04CA:008AC       _idt
+ 04CA:004AC       _ldt
+ 04CA:00424       _gdt
+ 04CA:0039C       _utils_tss
+ 04CA:0038A       _vcpi_pt
+ 04CA:00384       _firstarea
+ 04CA:00309       _hard_slave_hi
+ 04CA:00308       _hard_slave_lo
+ 04CA:00307       _hard_master_hi
+ 04CA:00306       _hard_master_lo
+ 04CA:00304       _locked_count
+ 04CA:002EE       _DPMIsp
+ 04CA:0001C       _CWSpar
+ 04CA:0001B       _use_xms
+ 04CA:0001A       _vcpi_installed
+ 04CA:00019       _mtype
+ 04CA:00014       __stklen
+ 04CA:00010 idle  ___brklvl
+ 04CA:0000C       __brklvl
+ 04CA:0000B idle  __osminor
+ 04CA:0000A       __osmajor
+ 04CA:00008       __psp
+
+Program entry point at 0000:0000
+

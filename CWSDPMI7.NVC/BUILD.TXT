@@ -1,0 +1,16 @@
+This NOVCPI build was made by RayeR to disable usage of VCPI memory and prefer
+XMS because amount of VCPI memory is quite limited to 32MB with EMM386 and
+128MB with JEMM386. It was done simply by changing a condition at line 192 in
+valloc.c and this option is controlled by defining a NOVCPI macro in control.h.
+It seems to be working well but was not deeply checked if this change could
+cause any unwanted sideeffects.
+
+Tools used for build:
+Borland C++ 4.52 (bcc.exe)
+Turbo Assembler 4.1 (tasm.exe)
+Borland MAKE 3.6 (make.exe)
+
+Just run make.
+
+If you have installed DJGPP on your system with DJGPP\BIN in your path it may
+cause troubles with echo command so remove DJGPP from your path before building.
